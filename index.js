@@ -73,8 +73,8 @@ function removeFromCart(item) {
       
     }
   }
-  if (cart.hasOwnProperty(item)===false) {
-    console.log ("That item is not in your cart");
+  if (!cart.hasOwnProperty(item)) {
+    console.log ("That item is not in your cart.");
   }
   return cart  ;
 }
