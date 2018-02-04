@@ -84,7 +84,7 @@ function placeOrder(cardNumber) {
   if (cardNumber > 0) {
     
   
-    return ("" + totalCost + "")
+    return ("Your total cost is $" + totalCost + "")
   }
   else
   {
