@@ -82,16 +82,14 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   //var totalCost = total();
-  if (isnotnull(cardNumber)) {
-    
+  if (isnull(cardNumber)) {
+    return("Sorry, we don't have a credit card on file for you.");
+  }  
+    else
+  {
     var totalCost = total();
     console.log ("Your total cost is $" + totalCost + ", which will be charged to the card " + cardNumber +".");
     cart = [];
     return cart;
   }
-  else
-  {
-    return("Sorry, we don't have a credit card on file for you.")
-  }
-  
 }
