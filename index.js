@@ -84,8 +84,10 @@ function placeOrder(cardNumber) {
   var totalCost = total();
   if (cardNumber === "") {
     
+    
+    console.log ("Your total cost is $" + totalCost + ", which will be charged to the card " + cardNumber +".");
     cart = [];
-    return ("Your total cost is $" + totalCost + ", which will be charged to the card " + cardNumber +".");
+    return cart;
   }
   else
   {
