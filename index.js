@@ -84,7 +84,7 @@ function placeOrder(cardNumber) {
   //var totalCost = total();
   //var i = cardNumber.length;
   if (cardNumber === undefined) {
-    return("Sorry, we don't have a credit card on file for you.");
+    return console.log("Sorry, we don't have a credit card on file for you.");
   }  
     else
   {
